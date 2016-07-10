@@ -1,8 +1,20 @@
-"""
-Write a program that reads lines from the user
-until an empty line is inserted.
-After the user typed in an empty line,
-print all previously inserted lines in reverse
-order (from last to first)
-"""
+output=""
+
+while True:
+    input = raw_input() 
+    if (len(input) <> 0) : 
+        output = input +"\n" + output  
+    else :
+        break;
+
+print output            
+
+
+
+
+
+
+
+
+
 
