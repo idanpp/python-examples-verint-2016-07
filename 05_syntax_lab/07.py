@@ -1,8 +1,13 @@
-""" Write a program that selects a random number
-and asks the user to guess it.
+from random import randint 
 
-After each guess print a hint "too large" or "too small" to the user.
+mispar = randint(1,100)
 
-Bonus: To make things interesting, the program should cheat once in a white
-"""
-
+while True:
+    input = int (raw_input())
+    if input > mispar:
+        print "BIG"
+    elif input < mispar:
+        print  "SMALL"
+    else:
+        print "Exctaly"
+        break
