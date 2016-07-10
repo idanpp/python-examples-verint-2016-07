@@ -1,9 +1,12 @@
-"""
-Write a program that randomizes 2 numbers
-and calculates their least common multiplier,
-that is the smallest number that is divisable
-by both.
-For example if the numbers were 4 and 6,
-program should print 12
-"""
+from random import randint
 
+one = randint(1,10)
+two = randint(1,10)
+
+for i in range(1,  (one * two)+1) :
+    if ((i % one == 0) and (i % two == 0)) :
+        print i
+        break
+
+print one,two
+    
